@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker\Infolists;
+namespace Nersus15\MapPicker\Infolists;
 
 use Closure;
 use Filament\Infolists\Components\Entry;
-use Dotswan\MapPicker\Contracts\MapOptions;
+use Nersus15\MapPicker\Contracts\MapOptions;
 
 class MapEntry extends Entry implements MapOptions
 {

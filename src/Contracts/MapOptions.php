@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker\Contracts;
+namespace Nersus15\MapPicker\Contracts;
 
 use Closure;
 

@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker\Facades;
+namespace Nersus15\MapPicker\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Dotswan\MapPicker\MapPicker
+ * @see \Nersus15\MapPicker\MapPicker
  */
 class MapPicker extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Dotswan\MapPicker\MapPicker::class;
+        return \Nersus15\MapPicker\MapPicker::class;
     }
 }

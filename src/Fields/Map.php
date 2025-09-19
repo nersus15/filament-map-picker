@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Dotswan\MapPicker\Fields;
+namespace Nersus15\MapPicker\Fields;
 
 use Closure;
 use Filament\Forms\Components\Field;
-use Dotswan\MapPicker\Contracts\MapOptions;
+use Nersus15\MapPicker\Contracts\MapOptions;
 //use Filament\Forms\Concerns\HasStateBindingModifiers;
 
 class Map extends Field implements MapOptions

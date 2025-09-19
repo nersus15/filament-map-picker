@@ -42,13 +42,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dotswan\\MapPicker\\": "src/",
-            "Dotswan\\MapPicker\\Database\\Factories\\": "database/factories/"
+            "Nersus15\\MapPicker\\": "src/",
+            "Nersus15\\MapPicker\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dotswan\\MapPicker\\Tests\\": "tests/"
+            "Nersus15\\MapPicker\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -68,10 +68,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dotswan\\MapPicker\\MapPickerServiceProvider"
+                "Nersus15\\MapPicker\\MapPickerServiceProvider"
             ],
             "aliases": {
-                "MapPicker": "Dotswan\\MapPicker\\Facades\\MapPicker"
+                "MapPicker": "Nersus15\\MapPicker\\Facades\\MapPicker"
             }
         }
     },

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-// translations for Dotswan/MapPicker
+// translations for Nersus15/MapPicker
 return [
 
 ];

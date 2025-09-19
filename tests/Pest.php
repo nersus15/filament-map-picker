@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-use Dotswan\MapPicker\Tests\TestCase;
+use Nersus15\MapPicker\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

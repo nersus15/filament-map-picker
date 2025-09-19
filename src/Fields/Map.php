@@ -45,6 +45,7 @@ class Map extends Field implements MapOptions
         'markerIconSize' => [36, 36],
         'markerIconClassName' => '',
         'markerIconAnchor' => [18, 36],
+        'isEditing' => false,
         'geoMan'               => [
             'show'                  =>  false,
             'editable'              =>  true,
@@ -100,11 +101,14 @@ class Map extends Field implements MapOptions
         $statePath = $this->getStatePath();
         $lastDotPosition = mb_strrpos($statePath, '.');
         $rangeSelectField = mb_substr($statePath, 0, $lastDotPosition + 1).$this->mapConfig['rangeSelectField'];
+        $isEditing = (bool) $this->getLivewire()->getRecord();
+
         return json_encode(
             array_merge($this->mapConfig, [
                 'statePath' => $statePath,
                 'rangeSelectField' => $rangeSelectField,
-                'controls' => array_merge($this->controls, $this->extraControls)
+                'controls' => array_merge($this->controls, $this->extraControls),
+                'isEditing' => $isEditing
             ])
         );
     }

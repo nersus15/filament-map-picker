@@ -7,6 +7,7 @@
 
 A custom field for Filament that allows you to effortlessly select a location on a map and retrieve geographical coordinates.
 
+This Is Modify Version from https://github.com/dotswan/filament-map-picker
 
 ![270298161-46b97f72-518b-40c5-963b-8e9d39d77d67](https://github.com/dotswan/map-picker/assets/20874565/a5dbda7b-b5c1-4038-9bf9-7a0a4c8ff632)
 

@@ -110,9 +110,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 if (config.liveLocation.send && config.liveLocation.realtime) {
-                    setInterval(() => {
+                    if(config.liveLocation.miliseconds && config.liveLocation.miliseconds > 0){
+                        setInterval(() => {
+                            this.fetchCurrentLocation();
+                        }, config.liveLocation.miliseconds);    
+                    }else{
                         this.fetchCurrentLocation();
-                    }, config.liveLocation.miliseconds);
+                    }
                 }
                 this.map.on('zoomend',function(event) {
                     that.setFormRestorationState(false, that.map.getZoom());
